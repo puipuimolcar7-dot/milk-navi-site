@@ -19,12 +19,13 @@
 <h2>2. 端末内に保存する情報</h2>
 <ul>
   <li><strong>赤ちゃんの生年月日</strong>: 月齢の計算のため、お使いの端末内にのみ保存します。</li>
+  <li><strong>赤ちゃんの体重（任意）</strong>: 手入力した値、またはぴよログのデータフィードに入っていた体重の記録（日時と値）を、1日の量の目安の計算のため、お使いの端末内にのみ保存します。</li>
   <li><strong>ぴよログのフィードURL</strong>: 端末の安全な保存領域(iOSのキーチェーン、AndroidのKeystore)に暗号化して保存します。バックアップや他の端末へは移しません。</li>
 </ul>
 <p>これらはアプリの削除、またはアプリ内の操作で消去できます。</p>
 
 <h2>3. ぴよログ データフィードの利用</h2>
-<p>利用者がフィードURLを登録すると、本アプリはそのURL(ぴよログのサーバー)から直近の育児記録を取得し、授乳(母乳・ミルク・搾母乳)の日時と量・時間だけを計算に使います。取得した記録は端末のメモリ上でのみ扱い、保存・送信はしません。通信はぴよログのサーバーと端末との間で直接行われ、開発者を経由しません。通信の際、通常のインターネット通信と同様にIPアドレス等がぴよログのサーバーに送信されます。</p>
+<p>利用者がフィードURLを登録すると、本アプリはそのURL(ぴよログのサーバー)から直近の育児記録を取得し、授乳(母乳・ミルク・搾母乳)の日時と量・時間、および体重の記録(日時と値)だけを計算に使います。授乳の記録は端末のメモリ上でのみ扱い、保存・送信はしません。体重だけは、フィードから外れても使えるよう端末内に保存します。通信はぴよログのサーバーと端末との間で直接行われ、開発者を経由しません。通信の際、通常のインターネット通信と同様にIPアドレス等がぴよログのサーバーに送信されます。</p>
 <p>本アプリはぴよログの公式アプリではありません。フィードURLは、それを知っている人が記録を閲覧できるものです。第三者に知られた可能性がある場合は、ぴよログのアプリでフィードを失効させ、新しいURLを発行してください。</p>
 
 <h2>4. 広告</h2>
@@ -50,8 +51,8 @@
 <p class="updated">Last updated: October 31, 2026</p>
 <p>ミルク目安ナビ ("the app") estimates how much formula a baby may need now, from the baby's age and the recent feeding records read from the Piyolog data feed. The developer collects no personal data on any server and asks for no account or personal details.</p>
 <ul>
-  <li><strong>On-device data</strong>: the baby's date of birth is stored only on your device. The Piyolog feed URL is stored encrypted in the system keychain/keystore and is excluded from backups.</li>
-  <li><strong>Piyolog data feed</strong>: when you register a feed URL, the app downloads recent records directly from Piyolog's server and uses only the feeding entries (time, amount, duration) for the calculation. The records are kept in memory only; they are not stored or sent anywhere. The app is not an official Piyolog app.</li>
+  <li><strong>On-device data</strong>: the baby's date of birth and weight (optional, entered by you or read from the Piyolog feed) are stored only on your device. The Piyolog feed URL is stored encrypted in the system keychain/keystore and is excluded from backups.</li>
+  <li><strong>Piyolog data feed</strong>: when you register a feed URL, the app downloads recent records directly from Piyolog's server and uses only the feeding entries (time, amount, duration) and weight entries for the calculation. Feeding records are kept in memory only; the weight is saved on your device only. Nothing is sent anywhere. The app is not an official Piyolog app.</li>
   <li><strong>Advertising</strong>: non-personalized ads only, through Google AdMob (Google LLC); the app does not ask for permission to track on iOS. AdMob may collect device information, approximate location derived from the IP address, app interactions and diagnostics to serve, limit, measure and protect ads. Feeding records and the date of birth are never sent for advertising. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
   <li><strong>Updates</strong>: the app checks Expo (EAS Update) for updates, which sends the device type and app version.</li>
 </ul>
